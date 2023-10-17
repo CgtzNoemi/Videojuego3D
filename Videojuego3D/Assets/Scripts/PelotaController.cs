@@ -11,10 +11,14 @@ public class PelotaController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        
         if(ignorarNextCollision)
         {
             return;
         }
+
+        GameManager.singleton.AgregarPuntaje(1);
+
         fisicas.velocity = Vector3.zero;
         fisicas.AddForce(Vector3.up*fuerzaImpulso, ForceMode.Impulse);
 
