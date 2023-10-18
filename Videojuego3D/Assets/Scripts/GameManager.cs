@@ -31,7 +31,9 @@ public class GameManager : MonoBehaviour
 
     public void ReiniciarNivel()
     {
-
+        Debug.Log("Restart");
+        singleton.PuntajeActual = 0;
+        FindObjectOfType<PelotaController>().ResetBall();
     }
 
     public void AgregarPuntaje(int puntajeaAgregar)

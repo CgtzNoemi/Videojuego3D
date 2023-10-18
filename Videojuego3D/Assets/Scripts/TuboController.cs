@@ -6,11 +6,19 @@ public class TuboController : MonoBehaviour
 {
     private Vector2 UltimoPosicion;
     private Vector3 PosicionInicial;
+    public Transform topTransform;
+    public Transform goalTransform;
+    public GameObject TuboLevelPrefab;
+    public List<Stage> allStages = new List<Stage>();
+    public float TuboDistancia;
+    private List<GameObject> spawnedLevels = new List<GameObject>();
 
-
-    void Start()
+    
+    private void Awake() 
     {
-       PosicionInicial = transform.localEulerAngles;
+        PosicionInicial = transform.localEulerAngles;
+        TuboDistancia = topTransform.localPosition.y - (goalTransform.localPosition.y + 0.1f);
+        //LoadStage(0);
     }
 
     
@@ -35,5 +43,10 @@ public class TuboController : MonoBehaviour
         {
             UltimoPosicion = Vector2.zero;
         }
+    }
+
+    public void LoadStage(int stageNumber)
+    {
+
     }
 }

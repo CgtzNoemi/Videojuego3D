@@ -9,6 +9,13 @@ public class PelotaController : MonoBehaviour
 
     private bool ignorarNextCollision;
 
+    private Vector3 PosicionInicial;
+
+    private void Start() 
+    {
+        PosicionInicial = transform.position;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         
@@ -17,7 +24,11 @@ public class PelotaController : MonoBehaviour
             return;
         }
 
-        GameManager.singleton.AgregarPuntaje(1);
+        DeathPart deathPart = collision.transform.GetComponent<DeathPart>();
+        if(deathPart)
+        {
+            GameManager.singleton.ReiniciarNivel();
+        }
 
         fisicas.velocity = Vector3.zero;
         fisicas.AddForce(Vector3.up*fuerzaImpulso, ForceMode.Impulse);
@@ -29,5 +40,10 @@ public class PelotaController : MonoBehaviour
     private void AllowNextCollision()
     {
         ignorarNextCollision = false;
+    }
+
+    public void ResetBall()
+    {
+        transform.position = PosicionInicial;
     }
 }
