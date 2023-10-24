@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        PuntajeActualTexto.text = "Puntaje: " + GameManager.singleton.PuntajeActual;
+        PuntajeActualTexto.text = "Puntos: " + GameManager.singleton.PuntajeActual;
         MejorpuntajeTexto.text = "Mejor: " + GameManager.singleton.Mejorpuntaje;
     }
 }
