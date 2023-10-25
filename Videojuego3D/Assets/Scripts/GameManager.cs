@@ -26,6 +26,9 @@ public class GameManager : MonoBehaviour
 
     public void SiguienteNivel()
     {
+        nivelActual++;
+        FindObjectOfType<PelotaController>().ResetBall();
+        FindObjectOfType<TuboController>().LoadStage(nivelActual);
         Debug.Log("Pasamos de nivel");
     }
 
@@ -34,6 +37,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Restart");
         singleton.PuntajeActual = 0;
         FindObjectOfType<PelotaController>().ResetBall();
+        FindObjectOfType<TuboController>().LoadStage(nivelActual);
     }
 
     public void AgregarPuntaje(int puntajeaAgregar)
