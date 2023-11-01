@@ -11,30 +11,60 @@ public class PelotaController : MonoBehaviour
 
     private Vector3 PosicionInicial;
 
-    private void Start() 
+    [HideInInspector]
+    public int perfectPass;
+
+    public float superSpeed = 8;
+
+    private bool isSuperSpeedActive;
+
+    public int perfectPassCount = 1;
+
+    private void Start()
     {
         PosicionInicial = transform.position;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        
-        if(ignorarNextCollision)
+
+        if (ignorarNextCollision)
         {
             return;
         }
 
-        DeathPart deathPart = collision.transform.GetComponent<DeathPart>();
-        if(deathPart)
+        if (isSuperSpeedActive && !collision.transform.GetComponent<GoalController>())
         {
-            GameManager.singleton.ReiniciarNivel();
+            Destroy(collision.transform.parent.gameObject, 0.2f);
+        }
+        else
+        {
+            DeathPart deathPart = collision.transform.GetComponent<DeathPart>();
+            if (deathPart)
+            {
+                GameManager.singleton.ReiniciarNivel();
+            }
         }
 
+
         fisicas.velocity = Vector3.zero;
-        fisicas.AddForce(Vector3.up*fuerzaImpulso, ForceMode.Impulse);
+        fisicas.AddForce(Vector3.up * fuerzaImpulso, ForceMode.Impulse);
 
         ignorarNextCollision = true;
-        Invoke("AllowNextCollision",0.2f);
+        Invoke("AllowNextCollision", 0.2f);
+
+        perfectPass = 0;
+        isSuperSpeedActive = false;
+    }
+
+    private void Update()
+    {
+        if (perfectPass >= perfectPassCount && !isSuperSpeedActive)
+        {
+            isSuperSpeedActive=true;
+
+            fisicas.AddForce(Vector3.down * superSpeed, ForceMode.Impulse);
+        }
     }
 
     private void AllowNextCollision()

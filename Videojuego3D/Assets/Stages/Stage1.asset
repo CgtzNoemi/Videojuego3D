@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageBackgroundColor: {r: 1, g: 0.6392157, b: 0.23529412, a: 1}
   stagePartColor: {r: 0.69411767, g: 0.36862746, b: 1, a: 1}
-  stageBallColor: {r: 0.23921569, g: 0.1882353, b: 0.63529414, a: 1}
+  stageBallColor: {r: 1, g: 0.8785283, b: 0.5896226, a: 1}
   Niveles:
   - partCount: 9
     deathPartCount: 1
