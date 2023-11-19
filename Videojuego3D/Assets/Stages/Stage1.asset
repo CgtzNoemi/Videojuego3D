@@ -18,25 +18,66 @@ MonoBehaviour:
   Niveles:
   - partCount: 9
     deathPartCount: 1
+    spacePartCount: 0
+    PlanetCount: 1
+    SolCount: 0
   - partCount: 10
     deathPartCount: 2
+    spacePartCount: 0
+    PlanetCount: 1
+    SolCount: 0
   - partCount: 9
-    deathPartCount: 0
+    deathPartCount: 1
+    spacePartCount: 0
+    PlanetCount: 0
+    SolCount: 1
   - partCount: 10
     deathPartCount: 1
-  - partCount: 10
-    deathPartCount: 1
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0
   - partCount: 10
     deathPartCount: 2
-  - partCount: 8
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 10
     deathPartCount: 2
-  - partCount: 10
-    deathPartCount: 0
-  - partCount: 10
-    deathPartCount: 1
-  - partCount: 10
-    deathPartCount: 3
-  - partCount: 10
-    deathPartCount: 1
+    spacePartCount: 0
+    PlanetCount: 0
+    SolCount: 1
   - partCount: 9
-    deathPartCount: 4
+    deathPartCount: 2
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 10
+    deathPartCount: 0
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 9
+    deathPartCount: 2
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 10
+    deathPartCount: 1
+    spacePartCount: 2
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 10
+    deathPartCount: 2
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 9
+    deathPartCount: 1
+    spacePartCount: 0
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 10
+    deathPartCount: 1
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0

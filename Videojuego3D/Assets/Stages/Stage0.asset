@@ -13,30 +13,66 @@ MonoBehaviour:
   m_Name: Stage0
   m_EditorClassIdentifier: 
   stageBackgroundColor: {r: 0.654902, g: 0.827451, b: 0.5921569, a: 1}
-  stagePartColor: {r: 0.9607843, g: 0.93333334, b: 0.78431374, a: 1}
+  stagePartColor: {r: 1, g: 0.93909854, b: 0.6084906, a: 1}
   stageBallColor: {r: 1, g: 1, b: 1, a: 1}
   Niveles:
-  - partCount: 9
+  - partCount: 11
     deathPartCount: 1
-  - partCount: 10
-    deathPartCount: 2
-  - partCount: 9
-    deathPartCount: 0
-  - partCount: 10
-    deathPartCount: 1
-  - partCount: 10
-    deathPartCount: 1
-  - partCount: 10
-    deathPartCount: 2
-  - partCount: 8
-    deathPartCount: 2
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0
   - partCount: 10
     deathPartCount: 0
-  - partCount: 10
-    deathPartCount: 1
-  - partCount: 10
-    deathPartCount: 3
-  - partCount: 10
-    deathPartCount: 1
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
   - partCount: 9
-    deathPartCount: 4
+    deathPartCount: 1
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 10
+    deathPartCount: 1
+    spacePartCount: 0
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 10
+    deathPartCount: 0
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 10
+    deathPartCount: 0
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 9
+    deathPartCount: 1
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 10
+    deathPartCount: 0
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 10
+    deathPartCount: 1
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 10
+    deathPartCount: 0
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 10
+    deathPartCount: 1
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 10
+    deathPartCount: 1
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0

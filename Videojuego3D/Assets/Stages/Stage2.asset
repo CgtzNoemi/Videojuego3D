@@ -13,30 +13,76 @@ MonoBehaviour:
   m_Name: Stage2
   m_EditorClassIdentifier: 
   stageBackgroundColor: {r: 0.9137255, g: 0.34117648, b: 0.5764706, a: 1}
-  stagePartColor: {r: 0.5803922, g: 0.043137256, b: 0.57254905, a: 1}
-  stageBallColor: {r: 0.85490197, g: 0.047058824, b: 0.5058824, a: 1}
+  stagePartColor: {r: 1, g: 0.654902, b: 0.7964644, a: 1}
+  stageBallColor: {r: 0.0470588, g: 0.4097857, b: 0.85490197, a: 1}
   Niveles:
   - partCount: 9
     deathPartCount: 1
-  - partCount: 10
-    deathPartCount: 2
-  - partCount: 9
-    deathPartCount: 0
-  - partCount: 10
-    deathPartCount: 1
-  - partCount: 10
-    deathPartCount: 1
-  - partCount: 10
-    deathPartCount: 2
-  - partCount: 8
-    deathPartCount: 2
-  - partCount: 10
-    deathPartCount: 0
-  - partCount: 10
-    deathPartCount: 1
+    spacePartCount: 2
+    PlanetCount: 1
+    SolCount: 0
   - partCount: 10
     deathPartCount: 3
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 11
+    deathPartCount: 3
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 10
+    deathPartCount: 4
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 9
+    deathPartCount: 2
+    spacePartCount: 0
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 10
+    deathPartCount: 2
+    spacePartCount: 0
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 11
+    deathPartCount: 2
+    spacePartCount: 0
+    PlanetCount: 0
+    SolCount: 1
   - partCount: 10
     deathPartCount: 1
+    spacePartCount: 0
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 10
+    deathPartCount: 2
+    spacePartCount: 1
+    PlanetCount: 1
+    SolCount: 0
   - partCount: 9
-    deathPartCount: 4
+    deathPartCount: 2
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 10
+    deathPartCount: 2
+    spacePartCount: 0
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 10
+    deathPartCount: 1
+    spacePartCount: 0
+    PlanetCount: 1
+    SolCount: 0
+  - partCount: 10
+    deathPartCount: 2
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1
+  - partCount: 9
+    deathPartCount: 2
+    spacePartCount: 1
+    PlanetCount: 0
+    SolCount: 1

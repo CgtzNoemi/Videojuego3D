@@ -6,6 +6,8 @@ public class PelotaController : MonoBehaviour
 {
     public Rigidbody fisicas;
     public float fuerzaImpulso = 3f;
+    public GameObject Tubo;
+    
 
     private bool ignorarNextCollision;
 
@@ -27,6 +29,7 @@ public class PelotaController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        RotarTubo();
 
         if (ignorarNextCollision)
         {
@@ -35,20 +38,48 @@ public class PelotaController : MonoBehaviour
 
         if (isSuperSpeedActive && !collision.transform.GetComponent<GoalController>())
         {
-            Destroy(collision.transform.parent.gameObject, 0.2f);
+            
+            if (collision.gameObject.CompareTag("planeta") || collision.gameObject.CompareTag("sol"))
+            {
+                GameManager.singleton.AgregarPuntaje(10);
+            }
+            else
+            {
+                GameManager.singleton.AgregarPuntaje(10);
+                Destroy(collision.transform.parent.gameObject, 0.2f);
+            }
         }
         else
         {
+            
             DeathPart deathPart = collision.transform.GetComponent<DeathPart>();
             if (deathPart)
             {
+                Debug.Log("DeathPart");
                 GameManager.singleton.ReiniciarNivel();
+            }
+
+            SpacePart spacePart = collision.transform.GetComponent<SpacePart>();
+            if (spacePart)
+            {
+                Debug.Log("Space part");
+                GameManager.singleton.AgregarPuntaje(2);
+                Destroy(spacePart.gameObject);
             }
         }
 
+        if (collision.gameObject.CompareTag("planeta") || collision.gameObject.CompareTag("sol"))
+        {
+            fisicas.velocity = Vector3.zero;
+            fisicas.AddForce(Vector3.up * 0.1f, ForceMode.Impulse);
+        }
+        else
+        {
+            fisicas.velocity = Vector3.zero;
+            fisicas.AddForce(Vector3.up * fuerzaImpulso, ForceMode.Impulse);
 
-        fisicas.velocity = Vector3.zero;
-        fisicas.AddForce(Vector3.up * fuerzaImpulso, ForceMode.Impulse);
+        }
+
 
         ignorarNextCollision = true;
         Invoke("AllowNextCollision", 0.2f);
@@ -75,5 +106,10 @@ public class PelotaController : MonoBehaviour
     public void ResetBall()
     {
         transform.position = PosicionInicial;
+    }
+
+    private void RotarTubo()
+    {
+        Tubo.transform.Rotate(Vector3.up, 200f * Time.deltaTime);
     }
 }

@@ -12,6 +12,14 @@ public class Nivel
    [Range(0,11)]
    public int deathPartCount = 1;
 
+    [Range(0, 11)]
+    public int spacePartCount = 1;
+
+    [Range(0, 1)]
+    public int PlanetCount = 1;
+
+    [Range(0, 1)]
+    public int SolCount = 1;
 }
 
 [CreateAssetMenu(fileName = "New Stage")]

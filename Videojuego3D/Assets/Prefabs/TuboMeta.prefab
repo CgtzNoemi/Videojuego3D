@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3466946146739785513}
   - component: {fileID: 4049263511997056679}
   - component: {fileID: 776213365442659143}
-  - component: {fileID: 5468626856146304195}
   m_Layer: 0
   m_Name: HelixGoalPrefab (10)
   m_TagString: Untagged
@@ -107,18 +106,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
---- !u!114 &5468626856146304195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300235846774817719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3063390351310314912
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +118,6 @@ GameObject:
   - component: {fileID: 3490050790173386179}
   - component: {fileID: 1782098364115520991}
   - component: {fileID: 7132273197995173902}
-  - component: {fileID: 2718826842724192262}
   m_Layer: 0
   m_Name: HelixGoalPrefab (1)
   m_TagString: Untagged
@@ -226,18 +212,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
---- !u!114 &2718826842724192262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3063390351310314912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3304413529862166753
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6254021488038256780}
+  - component: {fileID: 7744057965800776789}
   m_Layer: 0
   m_Name: TuboMeta
   m_TagString: Untagged
@@ -281,6 +256,18 @@ Transform:
   - {fileID: 1573367637851208474}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7744057965800776789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3304413529862166753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3538335692784693626
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +280,6 @@ GameObject:
   - component: {fileID: 8092182809129616822}
   - component: {fileID: 3945516509137494342}
   - component: {fileID: 5182405006270671003}
-  - component: {fileID: 8419224906460613119}
   m_Layer: 0
   m_Name: HelixGoalPrefab (9)
   m_TagString: Untagged
@@ -388,18 +374,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
---- !u!114 &8419224906460613119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3538335692784693626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3913365202120266111
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +386,6 @@ GameObject:
   - component: {fileID: 8022071909858762842}
   - component: {fileID: 1276208421188335807}
   - component: {fileID: 7759272246588670560}
-  - component: {fileID: 6081790663087245649}
   m_Layer: 0
   m_Name: HelixGoalPrefab (4)
   m_TagString: Untagged
@@ -507,18 +480,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
---- !u!114 &6081790663087245649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3913365202120266111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4605973907114214722
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,7 +492,6 @@ GameObject:
   - component: {fileID: 517786419757003123}
   - component: {fileID: 6894922043130068181}
   - component: {fileID: 5040636875923126764}
-  - component: {fileID: 2113329787185572053}
   m_Layer: 0
   m_Name: HelixGoalPrefab (5)
   m_TagString: Untagged
@@ -626,18 +586,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
---- !u!114 &2113329787185572053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4605973907114214722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4674591979634492365
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +598,6 @@ GameObject:
   - component: {fileID: 8765058174819817066}
   - component: {fileID: 211336998303210484}
   - component: {fileID: 3704950154084370184}
-  - component: {fileID: 6967066042869864317}
   m_Layer: 0
   m_Name: HelixGoalPrefab (6)
   m_TagString: Untagged
@@ -745,18 +692,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
---- !u!114 &6967066042869864317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4674591979634492365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5006126340248553666
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +704,6 @@ GameObject:
   - component: {fileID: 4493106018649902287}
   - component: {fileID: 5605977711035766983}
   - component: {fileID: 3385178807418968404}
-  - component: {fileID: 3745202278746495609}
   m_Layer: 0
   m_Name: HelixGoalPrefab (7)
   m_TagString: Untagged
@@ -864,18 +798,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
---- !u!114 &3745202278746495609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5006126340248553666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5104888950430102910
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +810,6 @@ GameObject:
   - component: {fileID: 8503727994674138165}
   - component: {fileID: 7722104457297334924}
   - component: {fileID: 5420177570562986750}
-  - component: {fileID: 4650188863707844557}
   m_Layer: 0
   m_Name: HelixGoalPrefab (3)
   m_TagString: Untagged
@@ -983,18 +904,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
---- !u!114 &4650188863707844557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5104888950430102910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6249420471395433652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,7 +916,6 @@ GameObject:
   - component: {fileID: 6781090063588172695}
   - component: {fileID: 8251843361762025907}
   - component: {fileID: 4272002437666322800}
-  - component: {fileID: 1233753548307425273}
   m_Layer: 0
   m_Name: HelixGoalPrefab (8)
   m_TagString: Untagged
@@ -1102,18 +1010,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
---- !u!114 &1233753548307425273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249420471395433652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8319630611577659214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,7 +1022,6 @@ GameObject:
   - component: {fileID: 6390212003900871809}
   - component: {fileID: 4284156982819461176}
   - component: {fileID: 9100557327227431224}
-  - component: {fileID: 253526211032370094}
   m_Layer: 0
   m_Name: HelixGoalPrefab (2)
   m_TagString: Untagged
@@ -1221,18 +1116,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
---- !u!114 &253526211032370094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8319630611577659214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8534124668081187930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1245,7 +1128,6 @@ GameObject:
   - component: {fileID: 6898795832653875091}
   - component: {fileID: 2298554887654427696}
   - component: {fileID: 4898262713397572367}
-  - component: {fileID: 8577306228692444303}
   m_Layer: 0
   m_Name: HelixGoalPrefab (11)
   m_TagString: Untagged
@@ -1340,18 +1222,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 18660545c7d842e4c819707d9098ecef, type: 3}
---- !u!114 &8577306228692444303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8534124668081187930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 835d5d63323b20144bd10ac235f49bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1829481598251861498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1404,7 +1274,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7221816081692799673, guid: dec3066209ead814998f9a6c0dfffc10, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
